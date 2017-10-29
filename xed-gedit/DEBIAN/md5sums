@@ -1,0 +1,6 @@
+f309b9114e7270335076f67411557ae0  DEBIAN/control
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+4775c51752f4a5e3a3778726c7a20711  DEBIAN/dpkg-divert
+cbbedae51b9700c571e132a26539404f  DEBIAN/postrm
+2be20568ab966b413a67035993fe082a  DEBIAN/preinst
+ddcbd2c7d6f265d16f90d9ebe735889d  usr/share/applications/pluma.desktop

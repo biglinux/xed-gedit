@@ -1,0 +1,14 @@
+Package: xed-gedit
+Version: 1.0.0-1big3
+Depends: pluma
+Replaces: gedit, xed
+Conflicts: gedit, xed
+Provides: gedit, xed
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:60
+Description: Simple package to replaces gedit and xed for pluma
+
+

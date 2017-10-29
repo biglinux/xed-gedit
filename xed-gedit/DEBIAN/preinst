@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=xed-gedit
+mkdir -p "/usr/share/dpkgdivert/xed-gedit"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/xed-gedit/usrshareapplicationspluma.desktop" --rename "/usr/share/applications/pluma.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/applications/pluma.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/xed-gedit/usrshareapplicationspluma.desktop" --rename "/usr/share/applications/pluma.desktop"
+fi
+;;
+esac
+exit 0
